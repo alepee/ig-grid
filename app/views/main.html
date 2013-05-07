@@ -16,13 +16,13 @@
       </code>
       <hr>
       <ul class="thumbnails">
-        <li ng-repeat="item in response.data.data" class="span2">
+        <li ng-repeat="item in response.data" class="span2">
           <a href="{{item.link}}" class="thumbnail">
-            <img src="{{item.images.low_resolution.url}}" alt="">
+            <img ng-src="{{item.images.low_resolution.url}}" alt="{{item.caption.text}}">
           </a>
         </li>
       </ul>
-      <div class="alert" ng-class="{hide: response.data.data.length > 0}">
+      <div class="alert" ng-class="{hide: response.data.length > 0}">
         Booyahh
       </div>
       <hr>

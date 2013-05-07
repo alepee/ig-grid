@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('igGridApp', [])
+angular.module('igGridApp', ['ngResource'])
   .config ($routeProvider) ->
     $routeProvider
       .when '/',
