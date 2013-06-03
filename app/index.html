@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link rel="stylesheet" href="components/fancybox/source/jquery.fancybox.css">
   </head>
   <body ng-app="igGridApp">
     <!--[if lt IE 7]>
@@ -28,10 +29,16 @@
     <!-- Add your site or application content here -->
     <div class="container" ng-view></div>
 
+    <script src="components/jquery/jquery.js"></script>
+    <script src="components/underscore/underscore.js"></script>
+    <script src="components/fancybox/source/jquery.fancybox.js"></script>
+
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
     <script src="components/angular-cookies/angular-cookies.js"></script>
     <script src="components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="components/angular-underscore/angular-underscore.js"></script>
+
 
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>

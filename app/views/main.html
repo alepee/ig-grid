@@ -10,21 +10,13 @@
 
   <div class="row">
     <div class="span12">
-      <strong>Query: </strong>
-      <code>
-        {{query}}
-      </code>
-      <hr>
       <ul class="thumbnails">
-        <li ng-repeat="item in response.data" class="span2">
-          <a href="{{item.link}}" class="thumbnail">
+        <li ng-repeat="item in images" class="span3">
+          <a href="{{item.link}}" target="_blank" class="thumbnail">
             <img ng-src="{{item.images.low_resolution.url}}" alt="{{item.caption.text}}">
           </a>
         </li>
       </ul>
-      <div class="alert" ng-class="{hide: response.data.length > 0}">
-        Booyahh
-      </div>
       <hr>
       <pre class="hide">
         {{response}}

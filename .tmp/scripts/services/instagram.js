@@ -1,5 +1,5 @@
 (function() {
-  'use strict';  angular.module('igGridApp').factory('instagram', [
+  'use strict';  angular.module('igGridApp').factory('Instagram', [
     '$resource', function($resource) {
       var defaultParams, endpoint;
 
@@ -9,7 +9,7 @@
         callback: 'JSON_CALLBACK'
       };
       return {
-        tag: $resource(endpoint + '/tags/:query/media/recent/', defaultParams, {
+        tag: $resource(endpoint + 'tags/:query/media/recent/', defaultParams, {
           get: {
             method: 'JSONP'
           }
